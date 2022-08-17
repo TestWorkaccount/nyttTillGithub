@@ -1,0 +1,54 @@
+<!doctype html> 
+<html> 
+<head> 
+ <meta charset="utf-8"> 
+ <title>html-mall</title> 
+ <style>
+    .green{
+        color:green;
+        font-style: italic;
+    }
+
+    .red{
+        color:red;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    #inforuta{
+        background-color: lightgray;
+        width: 400px;
+        height: 200px;
+        border:orange;
+        /* border-width: 5px; */
+        /* border-color: yellow; */
+        border-style:dotted;
+    }
+ </style>
+</head> 
+<body> 
+
+    <div id="inforuta">
+        Hela området med denna text är också med containern.
+        <br>
+        <span class="red">  &lt;div id="inforuta"&gt;...&lt;div&gt;</span>
+        <br>
+        som gör att informationsrutan har en bakgrundsfärg och en kantlinje och att all text är kursiv.
+        <br><br>
+
+        <div class="green">
+            Delar av området är omsluten av containern:
+            <br>
+            <span class="red">  &lt;div class="green"&gt;</span>
+            <br>
+            som färgar denna del texten men i övrigt
+            har den samma egenskaper som tidigare vissa ord i området är omslutna av:<br>
+            <span class="red">&lt;div class="red"&gt;</span>
+            <br>
+            som gör att de orden får röd färg och fet stil.
+        </div>
+    </div>
+
+
+</body>
+</html>

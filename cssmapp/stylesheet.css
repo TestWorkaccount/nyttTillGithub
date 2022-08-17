@@ -1,0 +1,52 @@
+
+body{
+    background-color: turquoise;
+    /* background-image:url(pikachu.png); */
+    background-size: contain;
+    background-size: 100%;
+    /* background-color: rgba(red, green, blue, 0);
+    color:rgba(red, green, blue, 0);
+    transp */
+    opacity: 0.5;
+
+    /* background-color: cyan; */ /*det här gör backgrunden turkos */
+}
+
+/* det här görs för alla p-element*/
+p {
+    color: darkgreen;
+    text-align:center;
+    /* vertical-align:middle   */
+    font-family:fantasy;
+    font-style:oblique;
+    font-size: 20px;
+   
+}
+
+.minklass{
+    color: purple;
+
+}
+
+.centrera{
+    text-align: center;
+}
+
+#mittid{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mittid2{
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mittid3{
+    font-style: italic;
+    background-color: bisque;
+    /* size: 50; */
+    font-size: 200%;
+    height: 200px;
+    width: 300px;
+    margin-top: 50px;
+}
