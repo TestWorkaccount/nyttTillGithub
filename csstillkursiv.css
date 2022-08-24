@@ -28,6 +28,7 @@ body {
     left: 150px;
     top: 100px;
     z-index: 1;
+    border: 20px solid;
 }
 
 
