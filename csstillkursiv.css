@@ -1,25 +1,33 @@
 body {
     margin: 25px;
 }
-#box {
-    background-color: #CCCC99;
-    width: 500px;
+
+.boxclass{
+    width: 250px;
     margin: 25px;
     padding: 25px;
     border: 5px solid;
     position: absolute;
-    left: 150px;
-    top: 100px
-    
+}
+
+#box{
+    background-color: aqua;
+    left: 175px;
+    top: 125px;
+    z-index: 3;
 }
 #box2{
     background-color: #218747;
-    width: 500px;
-    margin: 25px;
-    padding: 25px;
-    border: 5px solid;
-    position: absolute;
     left: 100px;
     top: 150px;
-    
+    z-index: 2;
 }
+
+#box3{
+    background-color: #CCCC99;
+    left: 150px;
+    top: 100px;
+    z-index: 1;
+}
+
+
