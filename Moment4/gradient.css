@@ -1,0 +1,77 @@
+
+
+
+.wrapper{
+    border: 2px solid red;
+    margin:auto;
+    width: 1000px;
+    height: 666.66px;
+}
+
+.topdiv{
+    width:100%;
+    height:50%;
+    border:1px solid;
+    display:flex;
+}
+
+.top-div-vänster{
+    width:33.33%;
+    height:100%;
+    border:1px solid tomato;
+    background-image: linear-gradient(to right, orange, green, red, blue);
+}
+
+.top-div-mitten{
+    width:33.33%;
+    height:100%;
+    border:1px solid tomato;
+    background-image:radial-gradient(orange, green, red, blue);
+}
+
+.top-div-höger{
+    width:33.33%;
+    height:100%;
+    border:1px solid tomato;
+    background-image: linear-gradient(to bottom right, blue, blue 50%, green 50%);
+    /* background-image: linear-gradient(to bottom left, blue, blue 50%, green 50%, cyan 75%, red 75%, purple 100%); */
+}
+
+.mittendiv{
+    width:100%;
+    height:50%;
+    border:1px solid;
+    display:flex;
+}
+
+.mitten-div-vänster{
+    width:33.33%;
+    height:100%;
+    border: 1px solid tomato;
+    background:
+    
+    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+    linear-gradient(to right, rgba(59, 54, 205, 0.5), rgb(219, 255, 255, 0.5)), */
+    linear-gradient(rgba(212, 175, 187, 0.5), rgba(146, 208, 219, 0.5)),
+    /* url("st.jpg") no-repeat, */
+    url("original.jpeg") no-repeat;
+    /* url("testbig.webp") no-repeat; */
+
+
+    
+    /* background-size: contain; */
+}
+
+.mitten-div-mitten{
+    width: 33.33%;
+    height:100%;
+    border:1px solid tomato;
+    background: linear-gradient(to left, lime 20%, red 20% 50%, cyan 50% 70%, yellow 80%);
+}
+
+.mitten-div-höger{
+    width: 33.33%;
+    height:100%;
+    border:1px solid tomato;
+    /* background-size: contain; */
+}
