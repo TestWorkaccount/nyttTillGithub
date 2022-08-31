@@ -76,6 +76,13 @@
     /* background-size: contain; */
 }
 
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+   aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
 .bottendiv{
     width:40px;
     height:40px;
