@@ -7,18 +7,25 @@
     width: 1000px;
     height: 666.66px;
 }
+.bild1{
+    width:33.33%;
+    height:100%;
+    border:1px solid tomato;
+}
 
 .topdiv{
     width:100%;
     height:50%;
     border:1px solid;
     display:flex;
+    justify-content: space-evenly;
 }
 
 .top-div-vänster{
     width:33.33%;
     height:100%;
     border:1px solid tomato;
+    justify-content: flex;
     background-image: linear-gradient(to right, orange, green, red, blue);
 }
 
@@ -171,6 +178,13 @@ transform-origin: center;
     }
 }
 
+.animation_wrapper{
+
+    transform: scale(1);
+    left: 0px;
+    top: 0px;
+    /* transform:translateX(0); */
+}
 
 .my_own{
     background:red;
@@ -178,8 +192,22 @@ transform-origin: center;
     width:40px;
     height:40px;
     position:absolute;
+    left: 0px;
+    right: 500px;
+
     animation:my_bounce 2s ease forwards infinite,
     move_left 2s linear forwards infinite;
+}
+
+.wall{
+    background:red;
+    width:80px;
+    height:100px;
+    position:relative;
+    right: 10px;
+    left: 90px;
+
+    bottom: 60px;
 }
 
 @keyframes move_left{
@@ -190,7 +218,8 @@ transform-origin: center;
         transform:translateX(50px);
     }
     100%{
-        transform:translateX(65px);
+        /* transform:translateX(65px); */
+        transform:translateX(40px);
     }
 }
 
@@ -256,4 +285,14 @@ transform-origin: center;
        
         background:#cb15df;
     }
+
+    
+}
+
+.oval{
+    background: radial-gradient(rgb(202, 143, 143) 50%, rgb(223, 41, 198) 55%);
+    border-radius:50%;
+    width:150px;
+    height:40px;
+    /* position:absolute; */
 }
