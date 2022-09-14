@@ -1,6 +1,11 @@
-li{
+
+.meny li{
+    list-style-type: none;
     float: left;
+    text-decoration: none;
 }
+
+
 
 .dropdown {
     position: relative;
