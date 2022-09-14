@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+  }
+
+ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0; 
+   border: 2px solid #F0F;
+   /* width: 200px; */
+   width: 25%;
+   background-color: tomato;
+   height: 100%;
+   position: fixed;
+   overflow: auto;
+}
+
+li a {
+    text-align: center;
+    display: block;
+    
+    color: #000;
+    padding: 8px 16px;
+    background-color: burlywood;
+    text-decoration: none;
+    border-bottom: 1px solid #04AA6D;
+}
+
+/*li:nth-last-child(3) a{ */
+li:last-child a{
+    /* background-color: aqua; */
+    border-bottom: none;
+}
+
+li a:hover{
+    background-color: #F00;
+    color: white;
+}
+
+.active{
+    background-color: #04AA6D;
+}
