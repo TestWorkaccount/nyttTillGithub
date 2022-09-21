@@ -24,7 +24,7 @@
                 <br>
                 <input type="password" id="lösenord" name="password" placeholder="Skriv lösenord" autocomplete="off">
                 <br>
-                <input id="login" type="submit" onclick="login();" value="Logga in">
+                <input id="login" type="submit" onclick="loggain();" value="Logga in">
                 <input type="submit" formaction="index.html" value="Avbryt">
             </div>
         </fieldset>
@@ -34,7 +34,7 @@
     <script>
         var antalFörsök = 3;
 
-        function login(){
+        function loggain(){
 
             var användarnamn = document.getElementById("användarnamn").value;
             var lösenord = document.getElementById("lösenord").value;
