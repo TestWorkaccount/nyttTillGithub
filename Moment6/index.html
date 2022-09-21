@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form action="./Moment5/menyuppgift.html" method="get">
+        <input type="submit" value="Sänd svar"><br>
+        <label for="text1">Information om textfältet</label>
+        <input type="text" name="text1" id="text1" placeholder="Skriv in information" value="">
+        <label for="text2">En text med 10 size</label>
+        <input type="text" name="tex21" id="text2" placeholder="Skriv in information" value="" size="10">
+        <label for="email">Skriv din mejl</label>
+        <!-- <input type="text" name="tex21" id="email" placeholder="Skriv in mejl" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" > -->
+        <input type="email" name="tex21" id="email" placeholder="Skriv in mejl" title="Här ska du skriva din email" >
+        <br>
+        <input type="checkbox" name="one" value="ett">
+        <label for="one">Ett</label><br>
+        <input type="checkbox" name="two" value="två">
+        <label for="two">Två</label><br>
+        <input type="checkbox" name="three" value="tre" checked>
+        <label for="three">three</label><br>
+        <br>
+        <input type="radio" id="one" name="nr" value="ett">
+        <label for="one">Ett</label><br>
+        <input type="radio" id="two" name="nr" value="två">
+        <label for="two">Två</label><br>
+        <input type="radio" id="three" name="nr" value="tre" checked>
+        <label for="three">three</label><br>
+        <br>
+        <input type="radio" id="g1" name="gender" value="ett">
+        <label for="one">Male</label><br>
+        <input type="radio" id="g2" name="gender" value="två">
+        <label for="two">Female</label><br>
+        <input type="radio" id="g3" name="gender" value="tre">
+        <label for="three">Other</label><br>
+        <br>
+        <input list="number">
+        <datalist id="number">
+          <option value="Ett">Ett</option>
+          <option value="Två">Två</option>
+          <option value="Tre">Tre</option>
+          <option value="Fyra">Fyra</option>
+          <option value="Fem">Fem</option>
+        </datalist>
+        <br>
+        <label for="textarea">Skriv en text</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50">
+           det här är value för textarean
+Här är vänsterkant
+                                                                            var är högerkanten?
+       </textarea><br>   
+
+       <input type="text" name="tex21" id="textstor" placeholder="Skriv in information" value="" >
+    </form>
+
+    <form action="" autocomplete="on">
+        <fieldset>
+        <legend>Ett litet exempel (som fungerar olika i olika webbläsare)</legend>
+        <label>Förnamn: </label><input type="text" name="fnamn"><br>
+        <label>Efternamn: </label><input type="text" name="enamn"><br>
+        <label>Username: </label><input type="text" name="username"><br>
+        <label>Mejladress: </label><input type="email" name="mejl" autocomplete="off"><br>
+        <input type="submit" value="Skicka">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

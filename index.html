@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <title>Min hemsida</title>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Välkommen till min hemsida!</h1> 
+
+    <!-- <form class="formular" action="Moment5/menyuppgift.html"> -->
+    <form class="formular">
+        <fieldset>
+            <legend>Loginformulär</legend>
+            <div class="login">
+                <label for="användarnamn">Användarnamn</label>
+                <br>
+                <input type="text" id="användarnamn" name="user" placeholder="Skriv in användarnamn" autocomplete="on">
+                <br>
+                <label for="lösenord">Lösenord</label>
+                <br>
+                <input type="password" id="lösenord" name="password" placeholder="Skriv lösenord" autocomplete="off">
+                <br>
+                <input id="login" type="submit" onclick="login();" value="Logga in">
+                <input type="submit" formaction="index.html" value="Avbryt">
+            </div>
+        </fieldset>
+
+    </form>
+
+    <script>
+        var antalFörsök = 3;
+
+        function login(){
+
+            var användarnamn = document.getElementById("användarnamn").value;
+            var lösenord = document.getElementById("lösenord").value;
+            if(användarnamn == "Åke" && lösenord == "123"){
+                alert("Lyckad inloggning!");
+                window.location = "Moment5/menyuppgift.html";
+            }
+            else{
+                antalFörsök--;
+                alert("Fel lösenord eller användarnamn.\nDu har " + antalFörsök + " antalförsök kvar.");
+                if(antalFörsök <= 0){
+                    document.getElementById("användarnamn").disabled = true;
+                    document.getElementById("lösenord").disabled = true;
+                    document.getElementById("login").disabled = true;
+                }
+            }
+        }
+
+        function hälsa(){
+            alert("Hejsan från funktion");
+        }
+
+
+
+    </script>
+
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; Åke Bjerregaard</p>
+    </footer>
+    
+</body>
+</html>
